@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 0 20px #222;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.alerta-header {
+    background: #003366;
+    color: #fff;
+    padding: 20px 20px 10px 20px;
+    position: relative;
+}
+.alerta-header h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.urgente {
+    color: #ff0000;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 1em;
+}
+.phishing-lenguaje {
+    color: #b22222;
+    font-size: 0.9em;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.alerta-body {
+    padding: 20px;
+    color: #222;
+}
+.actualizar-btn {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #aaa;
+}
+.prueba-social {
+    color: #222;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+.alerta-footer {
+    background: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95em;
+    position: relative;
+}
+.logo-uab {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #003366;
+}
+.footer-text {
+    margin-left: auto;
+    font-size: 0.9em;
+    color: #eee;
+}
+
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95vw;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta Crítica UAB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>x
+    <div id="phishing-modal" class="modal">
+        <div class="modal-content">
+            <div class="alerta-header">
+                <span class="urgente">¡Remenitir Falso!</span>
+                <span class="phishing-lenguaje">Lengiaje de urgencia para official de phishing</span>
+                <h2>Alerta Crítica UAB: ¡Actualize sus Datos or su Cuenta será Suspendida!</h2>
+            </div>
+            <div class="alerta-body">
+                <p>Estimato/a Estudiante,</p>
+                <p>Para maintern ds continuatu d sus servicios academicas es validas su información. ¡Más mos 500 estudiantes ya completer eis proceso!</p>
+                <button class="actualizar-btn" id="redirigir-login">CLICK AQUÍ PAR ACTUALIZAR</button>
+                <div class="prueba-social">
+                    <span>Pruiba social falso</span>
+                    <span>para geneare confdonto (pejl. uab-login.falso.com)</span>
+                </div>
+                <p>Si no completa eis proceso abtre loe 30/11/2024, permanentenu.</p>
+                <p><strong>¡Enlace Malicioso!</strong> Levan a sitiiio instituiontal sera dernanienta.</p>
+                <p>Attnament, Equipo de Soporte UAB</p>
+            </div>
+            <div class="alerta-footer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Logo_UAB_Bolivia.png" alt="Logo UAB" class="logo-uab">
+                <span>Uso fraudulento del logo oficial para dar credidiat</span>
+                <div class="footer-text">Universidad Adventista de Bolivia - Siempre Contigo</div>
+            </div>
+                <!-- Flechas eliminadas -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('redirigir-login');
+        if(btn) {
+            btn.onclick = function() {
+                window.location.href = 'login.html';
+            };
+        }
+    });
+    </script>
+</body>
+</html>

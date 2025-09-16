@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Adventista de Bolivia - Acceso</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6ecd7;
+        }
+        .header {
+            background: #205b86;
+            color: #fff;
+            padding: 20px 0 10px 0;
+            text-align: center;
+        }
+        .header img.logo-circular {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid #205b86;
+            background: #fff;
+            object-fit: cover;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .header-title {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 2.2em;
+            font-family: 'Georgia', serif;
+        }
+        .header-suenos {
+            font-size: 2.5em;
+            font-family: 'Arial', sans-serif;
+            font-weight: 300;
+            margin-top: 0.2em;
+        }
+        .info-portales {
+            background: #e9e9e9;
+            color: #222;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1em;
+        }
+        .info-portales a {
+            color: #205b86;
+            text-decoration: underline;
+        }
+        .login-box {
+            background: transparent;
+            border: 2px solid #888;
+            width: 500px;
+            margin: 60px auto 0 auto;
+            padding: 30px 20px 20px 20px;
+            border-radius: 2px;
+            box-sizing: border-box;
+        }
+        .login-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .login-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .login-row label {
+            width: 80px;
+            font-size: 1.1em;
+            margin-left: 10px;
+        }
+        .login-row input[type="text"],
+        .login-row input[type="password"] {
+            flex: 1;
+            padding: 6px;
+            font-size: 1em;
+            margin-left: 10px;
+        }
+        .login-row img {
+            width: 28px;
+            height: 28px;
+        }
+        .login-row .ocultar-usuario {
+            margin-left: 10px;
+        }
+        .login-row .ocultar-label {
+            margin-left: 10px;
+            font-size: 0.95em;
+        }
+        .login-btn {
+            display: block;
+            margin: 20px auto 0 auto;
+            padding: 7px 40px;
+            font-size: 1.1em;
+            background: #e9e9e9;
+            border: 1px solid #888;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .soporte {
+            text-align: center;
+            margin-top: 18px;
+            color: #444;
+            font-size: 1em;
+        }
+        .soporte span {
+            display: block;
+            margin-top: 5px;
+        }
+        @media (max-width: 600px) {
+            .login-box {
+                width: 95vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <img src="asdasdasd.jpg" alt="Logo UAB" class="logo-circular">
+        <span class="header-title">Universidad Adventista de Bolivia</span>
+        <div class="header-suenos">Realizamos tus <b>sueños</b></div>
+    </div>
+    <div class="info-portales">
+        Portales de información para: <a href="#">alumnos</a>, <a href="#">padres</a>, <a href="#">docentes</a> y área administrativa
+    </div>
+    <div class="login-box">
+        <div class="login-title">Datos de Acceso</div>
+        <form>
+            <div class="login-row">
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+                <label class="ocultar-label" for="ocultar">Ocultar Usuario:</label>
+                <input type="checkbox" id="ocultar" class="ocultar-usuario">
+            </div>
+            <div class="login-row">
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="clave">
+                <label for="clave">Clave:</label>
+                <input type="password" id="clave" name="clave">
+            </div>
+            <button type="submit" class="login-btn">INGRESAR</button>
+        </form>
+        <div class="soporte">
+            Soporte Técnico: eloyquispe@hotmail.com
+            <span>******</span>
+        </div>
+    </div>
+</body>
+</html>
